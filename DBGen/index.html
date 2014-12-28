@@ -13,7 +13,38 @@
         <h2>Recherche par ID</h2>
         <input type="text" id="searchId" size="5" />
         <input type="button" value="Recherche" onclick="find();" />
-        <p id="Requete" />
+        <p id="request" />
     </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        var uri = 'api/requests';
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            $.getJSON(uri)
+                .done(function (data) {
+                    // On success, 'data' contains a list of products.
+                    $.each(data, function (key, item) {
+                        // Add a list item for the product.
+                        $('<li>', { text: formatItem(item) }).appendTo($('#requests'));
+                    });
+                });
+        });
+
+        function formatItem(item) {
+            return item.ipAddress + ': $' + item.method;
+        }
+
+        function find() {
+            var id = $('#searchId').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#request').text(formatItem(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#request').text('Error: ' + err);
+                });
+        }
+    </script>
 </body>
 </html>
