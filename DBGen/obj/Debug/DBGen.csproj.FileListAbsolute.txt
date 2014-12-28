@@ -1,0 +1,14 @@
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\obj\Debug\DBGen.csprojResolveAssemblyReference.cache
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\DBGen.dll.config
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\DBGen.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\DBGen.pdb
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\Newtonsoft.Json.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Net.Http.Formatting.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Web.Http.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Web.Http.WebHost.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\Newtonsoft.Json.xml
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Net.Http.Formatting.xml
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Web.Http.xml
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\bin\System.Web.Http.WebHost.xml
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\obj\Debug\DBGen.dll
+C:\Users\Juliette\Source\Repos\DBReader\DBGen\DBGen\obj\Debug\DBGen.pdb
