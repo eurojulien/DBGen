@@ -13,7 +13,9 @@ namespace DBGen.Controllers
     {
         Request[] requests = new Request[]
         {
-            new Request{}
+            new Request{id=1, protocol="http", ipAddress="127.0.0.1", port="8000", method="GET", body="", header="", dateTime= new System.DateTime()},
+            new Request{id=2, protocol="http", ipAddress="127.0.0.1", port="8000", method="PUT", body="", header="", dateTime= new System.DateTime()},
+            new Request{id=3, protocol="http", ipAddress="127.0.0.1", port="8000", method="POST", body="", header="", dateTime= new System.DateTime()}
         };
 
         public IEnumerable<Request> GetAllRequests()
