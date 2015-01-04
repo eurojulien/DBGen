@@ -9,9 +9,10 @@ namespace DBGen.Models
     {
         public int id           { get; set; }
         public String protocol  { get; set; }
-        public String port      { get; set; }
+        public int port         { get; set; }
         public String ipAddress { get; set; }
         public String method    { get; set; }
+        public String url       { get; set; }
         public String body      { get; set; }
         public String header    { get; set; }
         public DateTime dateTime{ get; set; }
