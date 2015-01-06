@@ -15,6 +15,47 @@ namespace DBGen.Models
         public String url       { get; set; }
         public String body      { get; set; }
         public String header    { get; set; }
-        public DateTime dateTime{ get; set; }
+        public String dateTime  { get; set; }
+
+        public String SQLValuesToInsert()
+        {
+            return "(" +
+                   quoteStringForSQL(protocol) + ", " +
+                   quoteStringForSQL(port) + ", " +
+                   quoteStringForSQL(ipAddress) + ", " +
+                   quoteStringForSQL(method) + ", " +
+                   quoteStringForSQL(url) + ", " +
+                   quoteStringForSQL(body) + ", " +
+                   quoteStringForSQL(header) +
+                   ")";
+        }
+
+        public String SQLColumnToAffect()
+        {
+            return "(" +
+                   "protocol, " +
+                   "port, " +
+                   "ipaddress, " +
+                   "method, " +
+                   "url, " +
+                   "body, " +
+                   "header " +
+                   ")";
+        }
+
+        private String quoteStringForSQL(String value)
+        {
+            return "\'" + value.ToString() + "\'";
+        }
+
+        private String quoteStringForSQL(int value)
+        {
+            return value.ToString();
+        }
+
+        private String quoteStringForSQL(DateTime value)
+        {
+            return quoteStringForSQL(value.ToString());
+        }
     }
 }
